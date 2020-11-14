@@ -6,4 +6,6 @@
 .showRoom>* {
     width: 10vw;
     height: 10vw;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 }
