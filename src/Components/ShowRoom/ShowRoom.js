@@ -1,13 +1,12 @@
 import React from 'react';
 import  './ShowRoom.css';
-import J1 from './J1/J1';
+import RotatedBall from './RotatedBall/RotatedBall';
 import J2 from './J2/J2';
 
 const showRoom = props => {
     return (
         <div className="showRoom">
-            <J1></J1>
-            <J2></J2>
+            <RotatedBall></RotatedBall>
         </div>
     );
 }
