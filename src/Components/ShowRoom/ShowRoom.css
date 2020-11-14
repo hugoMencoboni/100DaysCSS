@@ -1,0 +1,9 @@
+.showRoom {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.showRoom>* {
+    width: 10vw;
+    height: 10vw;
+}

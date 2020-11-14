@@ -5,7 +5,7 @@ import J2 from './J2/J2';
 
 const showRoom = props => {
     return (
-        <div>
+        <div className="showRoom">
             <J1></J1>
             <J2></J2>
         </div>
