@@ -1,5 +1,5 @@
 import React from 'react';
-import  './J2.scoped.css';
+import  './J2.scoped.scss';
 
 const J2 = props => {
     return (
