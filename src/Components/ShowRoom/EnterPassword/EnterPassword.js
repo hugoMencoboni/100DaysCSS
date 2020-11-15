@@ -22,8 +22,8 @@ class EnterPassword extends Component {
                     <div className="secret box">MD5-SU3-CX8</div>
                 </div>
                 <div className={classSecret}>
-                    <div className="secret-text box">Secret Key</div>
                     <input type="text" className="box" placeholder='Enter "password"' onChange={this.inputChange}/>
+                    <div className="secret-text box">Secret Key</div>
                 </div>
             </div>
         </div>
