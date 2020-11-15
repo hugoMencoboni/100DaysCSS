@@ -1,0 +1,59 @@
+.challenge {
+    background-color: #607d8b;
+    display: grid;
+    justify-items: center;
+    align-items: center;   
+
+    .box {
+        position: relative;                
+        width: 100%;
+        height: 100%;
+
+        div {
+            position: absolute;
+            top: 50%;
+            background-color: white;
+        }
+        
+        .one {
+            animation: dance 9s linear infinite;
+        }
+
+        .two {
+            animation: dance 9s linear infinite;
+        }
+        
+        .three {
+            animation: dance 9s linear infinite;
+        }
+        
+        .four {
+            animation: dance 9s linear infinite;
+        }
+        
+        .five {
+            animation: dance 9s linear infinite;
+        }
+        
+        .six {
+            animation: dance 9s linear infinite;
+        }
+
+        @keyframes dance {
+            0% {
+                width: 0%;
+                height: 0%;
+            }
+            5% {
+                width: 10%;
+                height: 10%;
+            }
+            50% {
+                transform: translateX(550%);
+            }
+            100% {              
+                transform: translateX(0);
+            }
+        }          
+    }
+}

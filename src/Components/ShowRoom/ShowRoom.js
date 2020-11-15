@@ -4,6 +4,7 @@ import RotatedBall from './RotatedBall/RotatedBall';
 import EnterPassword from './EnterPassword/EnterPassword';
 import TranslatedCircle from './TranslatedCircle/TranslatedCircle';
 import HoverMe from './HoverMe/HoverMe';
+import Kaleidoscope from './Kaleidoscope/Kaleidoscope';
 
 const showRoom = props => {
     return (
@@ -12,6 +13,7 @@ const showRoom = props => {
             <EnterPassword></EnterPassword>
             <TranslatedCircle></TranslatedCircle>
             <HoverMe></HoverMe>
+            <Kaleidoscope></Kaleidoscope>
         </div>
     );
 }
