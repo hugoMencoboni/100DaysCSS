@@ -1,0 +1,42 @@
+.challenge {
+    background-color: #3498db;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 10%;
+
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 1rem;
+
+    div {
+        background-color: white;
+        text-transform: uppercase;
+        padding: 0.8em 2.5em;        
+        -webkit-animation: shrink 0.2s linear forwards;
+        animation: shrink 0.2s linear forwards;
+
+        &:hover {
+            -webkit-animation: grow 0.2s linear forwards;
+            animation: grow 0.2s linear forwards;
+        }
+        
+        @keyframes shrink {
+            from {
+                padding: 0.9em 3em;
+            }
+            to {
+                padding: 0.8em 2.5em;
+            }
+        }
+        
+        @keyframes grow {
+            from {
+                padding: 0.8em 2.5em;
+            }
+            to {
+                padding: 0.9em 3em;
+            }
+        }
+    }
+}

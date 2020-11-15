@@ -3,6 +3,7 @@ import  './ShowRoom.css';
 import RotatedBall from './RotatedBall/RotatedBall';
 import EnterPassword from './EnterPassword/EnterPassword';
 import TranslatedCircle from './TranslatedCircle/TranslatedCircle';
+import HoverMe from './HoverMe/HoverMe';
 
 const showRoom = props => {
     return (
@@ -10,6 +11,7 @@ const showRoom = props => {
             <RotatedBall></RotatedBall>
             <EnterPassword></EnterPassword>
             <TranslatedCircle></TranslatedCircle>
+            <HoverMe></HoverMe>
         </div>
     );
 }
