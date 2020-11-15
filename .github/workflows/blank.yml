@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages via angular-cli-ghpages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -19,13 +19,11 @@ jobs:
         node-version: 10.x
 
     - name: Install
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         npm install
         
-    - name: Deploy
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        npm run deploy
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_dir: ./build
