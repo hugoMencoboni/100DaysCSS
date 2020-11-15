@@ -1,0 +1,71 @@
+.challenge {
+    background-color: #9b59b6;
+    display: grid;
+    justify-items: center;
+    align-items: center;   
+
+    .circle-box {
+        position: relative;                
+        width: 90%;
+        height: 90%;
+
+        .circle {
+            position: absolute;
+            left: 0px;
+            top: 40%;
+            width: 15%;
+            height: 15%;
+            background-color: white;
+            opacity: .2;
+            border-radius: 100%;        
+        }
+        
+        .one {
+            opacity: 1;
+            -webkit-animation: translateCircle 2.5s ease-in-out infinite;
+            animation: translateCircle 2.5s ease-in-out infinite;
+        }
+
+        .two {
+            -webkit-animation: translateCircle 2.5s ease-in-out infinite;
+            animation: translateCircle 2.5s ease-in-out infinite;
+            animation-delay: 0.02s;
+        }
+        
+        .three {
+            -webkit-animation: translateCircle 2.5s ease-in-out infinite;
+            animation: translateCircle 2.5s ease-in-out infinite;
+            animation-delay: 0.04s;
+        }
+        
+        .four {
+            -webkit-animation: translateCircle 2.5s ease-in-out infinite;
+            animation: translateCircle 2.5s ease-in-out infinite;
+            animation-delay: 0.06s;
+        }
+        
+        .five {
+            -webkit-animation: translateCircle 2.5s ease-in-out infinite;
+            animation: translateCircle 2.5s ease-in-out infinite;
+            animation-delay: 0.08s;
+        }
+        
+        .six {
+            -webkit-animation: translateCircle 2.5s ease-in-out infinite;
+            animation: translateCircle 2.5s ease-in-out infinite;
+            animation-delay: 0.1s;
+        }
+
+        @keyframes translateCircle {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(550%);
+            }
+            100% {              
+                transform: translateX(0);
+            }
+        }          
+    }
+}
