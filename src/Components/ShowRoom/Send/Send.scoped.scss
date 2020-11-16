@@ -1,0 +1,49 @@
+.challenge {
+    background-color: #bdcedb;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+
+    .container {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "center-area";
+        
+        transition: transform 0.3s linear;
+
+        div {
+            grid-area: center-area;
+            border-radius: 50px;
+            border: 2px solid white;
+            padding: 0.8em 1.5em;
+            backface-visibility: hidden;
+            text-transform: uppercase;
+        }
+
+        .send {
+            background-color: white;
+            color: #34495E;
+            
+            -webkit-box-shadow: 5px 5px 10px 0px rgba($color: black, $alpha: 0.3);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+            -moz-box-shadow:    5px 5px 10px 0px rgba($color: black, $alpha: 0.3);  /* Firefox 3.5 - 3.6 */
+            box-shadow:         5px 5px 10px 0px rgba($color: black, $alpha: 0.3);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+        }
+
+        .done {
+            background-color: #64c760;
+            color: white;
+            transform: rotateX(180deg);
+        }
+
+        &.show {
+            -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+            transform-style: preserve-3d;
+        }
+    }
+}

@@ -6,6 +6,7 @@ import TranslatedCircle from './TranslatedCircle/TranslatedCircle';
 import HoverMe from './HoverMe/HoverMe';
 import Kaleidoscope from './Kaleidoscope/Kaleidoscope';
 import Chapters from './Chapters/Chapters';
+import Send from './Send/Send';
 
 const showRoom = props => {
     return (
@@ -16,6 +17,7 @@ const showRoom = props => {
             <HoverMe></HoverMe>
             <Kaleidoscope></Kaleidoscope>
             <Chapters></Chapters>
+            <Send></Send>
         </div>
     );
 }
