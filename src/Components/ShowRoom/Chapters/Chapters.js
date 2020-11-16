@@ -7,7 +7,7 @@ const Chapters = props => {
             <div>First</div>
             <div>Second</div>
             <div>Third</div>
-            <div>Fourth</div>
+            <div><p>Fourth</p></div>
         </div>
     );
 }

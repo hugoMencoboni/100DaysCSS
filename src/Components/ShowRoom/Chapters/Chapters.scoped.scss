@@ -1,6 +1,5 @@
 .challenge {
     display: flex;
-    justify-items: center;
     align-items: center;
     
     font-family: "Open Sans", Helvetica, sans-serif;
@@ -14,6 +13,10 @@
         transition: width 0.25s linear, color 0.25s linear;
         text-align: center;
         text-transform: uppercase;
+
+        display: grid;        
+        justify-items: center;
+        align-items: center;
         
         &:nth-child(2n) {
             background-color: #e67e22;

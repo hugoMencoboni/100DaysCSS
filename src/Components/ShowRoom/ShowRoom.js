@@ -10,7 +10,6 @@ import Chapters from './Chapters/Chapters';
 const showRoom = props => {
     return (
         <div className="showRoom">
-            <Chapters></Chapters>
             <RotatedBall></RotatedBall>
             <EnterPassword></EnterPassword>
             <TranslatedCircle></TranslatedCircle>
