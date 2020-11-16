@@ -7,7 +7,7 @@ class Send extends Component {
     }
         
     send = () => {
-      this.setState({ sent: !this.state.sent });
+      //this.setState({ sent: !this.state.sent });
     }
   
     render() {
@@ -15,10 +15,11 @@ class Send extends Component {
 
       return (
         <div className="challenge">
-            <div  className={classSecret}>      
+            <input type="checkbox" name="cb" id="cb"/>
+            <label className={classSecret} for="cb">      
               <div className="send" onClick={this.send}>Send</div>
               <div className="done" onClick={this.send}>Done</div>
-            </div>
+            </label>
         </div>
       );
     }

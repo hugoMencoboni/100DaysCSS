@@ -8,6 +8,16 @@
     font-size: 1rem;
     font-weight: 700;
 
+    #cb {
+        display: none;
+
+        &:checked + .container {
+            -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+            transform-style: preserve-3d;
+        }
+    }
+
     .container {
         display: grid;
         grid-template-rows: 1fr;
@@ -38,12 +48,6 @@
             background-color: #64c760;
             color: white;
             transform: rotateX(180deg);
-        }
-
-        &.show {
-            -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
-            transform-style: preserve-3d;
         }
     }
 }

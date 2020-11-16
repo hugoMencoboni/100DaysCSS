@@ -28,3 +28,8 @@ Use [backface-visibility: hidden;](https://www.w3schools.com/cssref/css3_pr_back
 <img src="./gifs/kaleidoscope.gif" width="250" height="250"/>
 
 The declaration order of [transform: transformation2 transformation1;](https://css-tricks.com/almanac/properties/t/transform/#multiple-values) matters and are applied from right to left!
+
+## Day 7 checkbox with +/~ selectors
+<img src="./gifs/send.gif" width="250" height="250"/>
+
+For components with "boolean" states, you can hide an checkbox with `display: none;`. Add a label for this checkbox in sibling and add your visual inside this label! You can now trigger the checked animation using + or ~ selector with `#checkboxId:checked ~ #labelId { ...`
