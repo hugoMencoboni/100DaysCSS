@@ -1,11 +1,11 @@
 .showRoom {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
 }
 
 .showRoom>* {
-    width: 20vw;
-    height: 20vw;
+    width: 12.5vw;
+    height: 12.5vw;
     border-radius: 2px;
     box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 }
