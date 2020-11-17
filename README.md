@@ -2,7 +2,7 @@
 
 [https://hugomencoboni.github.io/100DaysCSS/](https://hugomencoboni.github.io/100DaysCSS/).
 
-Make your how 100 days: 
+Make your own 100 days: 
 - [https://100dayscss.com](https://100dayscss.com/)
 - [https://cssbattle.dev](https://cssbattle.dev/)
 
@@ -10,7 +10,7 @@ Make your how 100 days:
 ## Day 1 `transform-style: preserve-3d;`
 <img src="./gifs/rotatedBall.gif" width="250" height="250"/>
 
-Use [transform-style: preserve-3d;](https://www.w3schools.com/cssref/css3_pr_transform-style.asp) on container to preserve 3d transformations of childs when container is also subject to 3d transformations.
+Use [transform-style: preserve-3d;](https://www.w3schools.com/cssref/css3_pr_transform-style.asp) on container to preserve 3d transformations of children when container is also subject to 3d transformations.
 
 ## Day 2 `backface-visibility: hidden;`
 <img src="./gifs/enterPassword.gif" width="250" height="250"/>
