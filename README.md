@@ -38,11 +38,11 @@ The declaration order of [transform: transformation2 transformation1;](https://c
 For components with "boolean" states, you can hide an checkbox with `display: none;`. Add a label for this checkbox in sibling and add your visual inside this label! You can now trigger the checked animation using + or ~ selector with `#checkboxId:checked ~ #labelId { ...`
 
 ## Day 8 triangles with border
-<img src="./gifs/triangles.png" width="250" height="250"/>
+<img src="./gifs/triangles.PNG" width="250" height="250"/>
 
 Use `border` property to [create triangles](https://levelup.gitconnected.com/making-css-triangles-c0201dacc26).
 
 ## Day 9 `overflow: hidden;` to create figures
-<img src="./gifs/intersect.png" width="250" height="250"/>
+<img src="./gifs/intersect.PNG" width="250" height="250"/>
 
 Some figures (like this circle intersection) are easier to create with a container with `overflow: hidden;` and a child in absolute.
