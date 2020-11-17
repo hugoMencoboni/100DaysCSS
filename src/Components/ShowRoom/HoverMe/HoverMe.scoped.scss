@@ -13,7 +13,8 @@
         background-color: white;
         text-transform: uppercase;
         padding: 0.8em 2.5em;     
-        transform: scale(1,1);   
+        transform: scale(1,1);
+        white-space: nowrap;   
     
         transition: transform 0.3s linear, box-shadow 0.3s linear;
         -o-transition: transform 0.3s linear, box-shadow 0.3s linear; /* opera */

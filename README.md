@@ -2,7 +2,10 @@
 
 [https://hugomencoboni.github.io/100DaysCSS/](https://hugomencoboni.github.io/100DaysCSS/).
 
-Make your how 100 days: [https://100dayscss.com/](https://100dayscss.com/).
+Make your how 100 days: 
+- [https://100dayscss.com](https://100dayscss.com/)
+- [https://cssbattle.dev](https://cssbattle.dev/)
+
 
 ## Day 1 `transform-style: preserve-3d;`
 <img src="./gifs/rotatedBall.gif" width="250" height="250"/>
@@ -33,3 +36,8 @@ The declaration order of [transform: transformation2 transformation1;](https://c
 <img src="./gifs/send.gif" width="250" height="250"/>
 
 For components with "boolean" states, you can hide an checkbox with `display: none;`. Add a label for this checkbox in sibling and add your visual inside this label! You can now trigger the checked animation using + or ~ selector with `#checkboxId:checked ~ #labelId { ...`
+
+## Day 8 triangles with border
+<img src="./gifs/triangles.png" width="250" height="250"/>
+
+Use `border` property to [create triangles](https://levelup.gitconnected.com/making-css-triangles-c0201dacc26).

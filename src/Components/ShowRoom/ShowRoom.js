@@ -7,6 +7,7 @@ import HoverMe from './HoverMe/HoverMe';
 import Kaleidoscope from './Kaleidoscope/Kaleidoscope';
 import Chapters from './Chapters/Chapters';
 import Send from './Send/Send';
+import Triangles from './Triangles/Triangles';
 
 const showRoom = props => {
     return (
@@ -18,6 +19,7 @@ const showRoom = props => {
             <Kaleidoscope></Kaleidoscope>
             <Chapters></Chapters>
             <Send></Send>
+            <Triangles></Triangles>
         </div>
     );
 }
