@@ -46,3 +46,7 @@ Use `border` property to [create triangles](https://levelup.gitconnected.com/mak
 <img src="./gifs/intersect.PNG" width="250" height="250"/>
 
 Some figures (like this circle intersection) are easier to create with a container with `overflow: hidden;` and a child in absolute.
+
+## Others
+
+Start your projects with the good defaults => [https://hankchizljaw.com/wrote/a-modern-css-reset/](https://hankchizljaw.com/wrote/a-modern-css-reset/)
