@@ -1,0 +1,33 @@
+.challenge {
+    background: #09042A;
+    position: relative;
+    overflow: hidden;
+    font-size: 1rem;
+    
+    div {  
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 25%;
+        border-radius: 50%;
+        
+        &:nth-child(1) {
+            background-color: #7B3F61;
+            left: 10%;
+        }
+
+        &:nth-child(2) {
+            background-color: #E78481;
+            right: 10%;
+            overflow: hidden;
+
+            div {
+                width: 100%;
+                height: 100%;
+                top: 0%;
+                left: -60%;
+                background-color: #09042A;
+            }
+        }
+    }
+}

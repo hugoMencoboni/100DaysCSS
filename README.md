@@ -41,3 +41,8 @@ For components with "boolean" states, you can hide an checkbox with `display: no
 <img src="./gifs/triangles.png" width="250" height="250"/>
 
 Use `border` property to [create triangles](https://levelup.gitconnected.com/making-css-triangles-c0201dacc26).
+
+## Day 9 `overflow: hidden;` to create figures
+<img src="./gifs/intersect.png" width="250" height="250"/>
+
+Some figures (like this circle intersection) are easier to create with a container with `overflow: hidden;` and a child in absolute.

@@ -8,6 +8,7 @@ import Kaleidoscope from './Kaleidoscope/Kaleidoscope';
 import Chapters from './Chapters/Chapters';
 import Send from './Send/Send';
 import Triangles from './Triangles/Triangles';
+import Intersect from './Intersect/Intersect';
 
 const showRoom = props => {
     return (
@@ -20,6 +21,7 @@ const showRoom = props => {
             <Chapters></Chapters>
             <Send></Send>
             <Triangles></Triangles>
+            <Intersect></Intersect>
         </div>
     );
 }
