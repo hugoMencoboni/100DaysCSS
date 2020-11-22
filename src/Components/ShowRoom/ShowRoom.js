@@ -9,6 +9,7 @@ import Chapters from './Chapters/Chapters';
 import Send from './Send/Send';
 import Triangles from './Triangles/Triangles';
 import Intersect from './Intersect/Intersect';
+import Candle from './Candle/Candle';
 
 const showRoom = props => {
     return (
@@ -22,6 +23,7 @@ const showRoom = props => {
             <Send></Send>
             <Triangles></Triangles>
             <Intersect></Intersect>
+            <Candle></Candle>
         </div>
     );
 }

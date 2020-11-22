@@ -1,0 +1,78 @@
+.challenge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2c3e50;
+        
+    .light-box {
+        width: 4%;
+        height: 6%;
+        position: relative;
+        
+        .light {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffad00;
+            box-shadow: 0 0 2em .1em #ffad00;
+            animation: burn 7s linear infinite;
+        }
+
+        @keyframes burn {
+            0% {
+                transform: scale(1, 1);
+                border-radius: 30px 100px 50px 50px;
+            }
+            25% {
+                transform: scale(0.9, 1.2);
+                border-radius: 100px 30px 50px 50px;
+            }
+            50% {
+                transform: scale(0.9, 0.9);
+                border-radius: 10px 150px 50px 50px;
+            }
+            75% {
+                transform: scale(1, 0.8);
+                border-radius: 100px 30px 50px 50px;
+            }
+            100% {      
+                transform: scale(1, 1);
+                border-radius: 30px 100px 50px 50px;
+            }
+        }
+    }
+
+    .string {
+        background-color: #b78f94;
+        width: 1.5%;
+        height: 3%;
+    }
+
+    .body {  
+        background-color: #e0e5ff;
+        border-radius: 5%;
+        width: 20%;
+        height: 30%;
+        position: relative;
+        overflow: hidden;
+
+        div {
+            position: absolute;
+            background-color: #ffffff;
+            border-radius: 5%;
+            width: 100%;            
+            height: 100%;
+            right: 15%;
+        }
+    }
+
+    .support {
+        background-color: #1b233e;
+        border-radius: 20px;
+        width: 40%;
+        height: 3%;
+    }
+}
