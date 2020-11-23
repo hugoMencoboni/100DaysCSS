@@ -43,12 +43,12 @@
             transform: translateX(-50%) rotate(45deg);
 
             &.p-1 {
-                background-color: #d3d4d5;
+                animation: p1-color 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
             }
 
             &.p-2 {
-                background-color: #fff;
-                clip-path: polygon(180% 100%, 100% 0%, 0% 0%)
+                clip-path: polygon(180% 100%, 100% 0%, 0% 0%);
+                animation: p2-color 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
             }
         }
 
@@ -67,6 +67,30 @@
             }
         }
         
+        @keyframes p1-color {
+            0% {
+                background-color: #d3d4d5;
+            }
+            30% {
+                background-color: #fff;
+            }
+            100% {     
+                background-color: #d3d4d5;
+            }
+        }
+
+        @keyframes p2-color {
+            0% {
+                background-color: #969aa0;
+            }
+            30% {
+                background-color: #F4F4F4;
+            }
+            100% {     
+                background-color: #fff;
+            }
+        }
+
         @keyframes fade {
             0% {
                 opacity: 0;
