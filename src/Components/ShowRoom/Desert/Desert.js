@@ -9,6 +9,7 @@ const Desert = props => {
                 <div className="pyramid p-1"></div>  
                 <div className="pyramid p-2"></div>
                 <div className="sand"></div>  
+                <div className="shadow"></div>  
             </div>            
         </div>
     );

@@ -47,6 +47,11 @@ Use `border` property to [create triangles](https://levelup.gitconnected.com/mak
 
 Some figures (like this circle intersection) are easier to create with a container with `overflow: hidden;` and a child in absolute.
 
+## Day 10 `clip-path: xxx;` for complex shapes
+<img src="./gifs/desert.gif" width="250" height="250"/>
+
+Some shapes are easier to create with [`clip-path` property](https://css-tricks.com/almanac/properties/c/clip-path/).
+
 ## Others
 
 Start your projects with the good defaults => [https://hankchizljaw.com/wrote/a-modern-css-reset/](https://hankchizljaw.com/wrote/a-modern-css-reset/)

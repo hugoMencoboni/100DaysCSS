@@ -3,7 +3,6 @@
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-
     background-color: #33383f;
 
     .scene {
@@ -34,6 +33,21 @@
             animation: sun-moves 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
         }
 
+        @keyframes sun-moves {
+            0% {
+                background-color: #F57209;
+                transform: rotate(-120deg);
+            }
+            30% {
+                background-color: #ffee00;
+                transform: rotate(-20deg);
+            }
+            100% {     
+                background-color: #F57209; 
+                transform: rotate(100deg);
+            }
+        }
+
         .pyramid {
             position: absolute;
             top: 45%;
@@ -49,21 +63,6 @@
             &.p-2 {
                 clip-path: polygon(180% 100%, 100% 0%, 0% 0%);
                 animation: p2-color 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
-            }
-        }
-
-        @keyframes sun-moves {
-            0% {
-                background-color: #F57209;
-                transform: rotate(-120deg);
-            }
-            30% {
-                background-color: #ffee00;
-                transform: rotate(-20deg);
-            }
-            100% {     
-                background-color: #F57209; 
-                transform: rotate(100deg);
             }
         }
         
@@ -91,16 +90,41 @@
             }
         }
 
-        @keyframes fade {
+        .shadow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 70%;
+            background-color: rgba(0, 0, 0, 0.2);
+            clip-path: polygon(250% 100%, 85% 0%, 15% 0%);
+            animation: shadow-moves 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+        }
+        
+        @keyframes shadow-moves {
             0% {
-                opacity: 0;
+                clip-path: polygon(100% 10%, 85% 0%, 15% 0%);
             }
             30% {
-                opacity: 1;
+                clip-path: polygon(75% 20%, 85% 0%, 15% 0%);
             }
             100% {     
-                opacity: 0;
+                clip-path: polygon(0% 10%, 85% 0%, 15% 0%);
             }
+        }
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 1;
+        }
+        100% {     
+            opacity: 0;
         }
     }
 }
