@@ -10,6 +10,7 @@ import Send from './Send/Send';
 import Triangles from './Triangles/Triangles';
 import Intersect from './Intersect/Intersect';
 import Candle from './Candle/Candle';
+import Paving from './Paving/Paving';
 
 const showRoom = props => {
     return (
@@ -24,6 +25,7 @@ const showRoom = props => {
             <Triangles></Triangles>
             <Intersect></Intersect>
             <Candle></Candle>
+            <Paving></Paving>
         </div>
     );
 }
