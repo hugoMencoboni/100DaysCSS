@@ -4,6 +4,10 @@
     align-items: center;
     padding-bottom: .5em;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     input[type="checkbox"] {
         display: none;
     }
@@ -23,6 +27,14 @@
         width: 1em;
         height: 1em;
         border-radius: 100%;
+        opacity: 1;
+        transform: scale(1);
         border: 1px solid #497081;
+        transition: all .4s ease-in;
+    }
+    
+    input:checked ~ .fakeCheckbox {
+        opacity: 0;
+        transform: scale(1.5);
     }
 }
