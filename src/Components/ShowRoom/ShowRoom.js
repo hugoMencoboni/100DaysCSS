@@ -12,6 +12,7 @@ import Intersect from './Intersect/Intersect';
 import Candle from './Candle/Candle';
 import Paving from './Paving/Paving';
 import Desert from './Desert/Desert';
+import TodoList from './TodoList/TodoList';
 
 const showRoom = props => {
     return (
@@ -28,6 +29,7 @@ const showRoom = props => {
             <Candle></Candle>
             <Paving></Paving>
             <Desert></Desert>
+            <TodoList></TodoList>
         </div>
     );
 }

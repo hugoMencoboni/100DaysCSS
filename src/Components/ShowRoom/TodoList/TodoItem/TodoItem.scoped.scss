@@ -1,0 +1,28 @@
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .5em;
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .label {
+        opacity: 1;
+        transition: opacity .5s ease-out;
+        text-align: left;
+    }
+
+    input:checked ~ .label,
+    input:checked ~ .fakeCheckbox {
+        opacity: 0.5;
+    }
+
+    .fakeCheckbox {
+        width: 1em;
+        height: 1em;
+        border-radius: 100%;
+        border: 1px solid #497081;
+    }
+}
