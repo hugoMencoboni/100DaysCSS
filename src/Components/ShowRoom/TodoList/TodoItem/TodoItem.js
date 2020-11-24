@@ -6,7 +6,8 @@ const TodoItem = props => {
         <label className="todo">
             <input type="checkbox" onClick={props.todoChecked}/>
             <div className="label">{props.label}</div>
-            <div className="fakeCheckbox"></div>
+            <div className="fakeCheckbox-unchecked"></div>
+            <div className="fakeCheckbox-checked"></div>
         </label>
     );
 }
