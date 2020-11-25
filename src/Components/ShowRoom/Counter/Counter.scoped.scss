@@ -1,0 +1,87 @@
+.challenge {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    background-image: linear-gradient(to top right, #D2592A, #FDB03A);
+    
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 1rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .3em;
+        background-color: #ffffff;
+        border-radius: 50px;
+
+        .increase, 
+        .decrease {
+            position: relative;
+            width: 2.7em;
+            height: 2.7em;
+            text-align: center;
+            cursor: pointer;
+            padding: .3em;
+            border-radius: 100%;
+            
+            div {
+                position: absolute;
+                top: calc(50% - 5%); // middle - height / 2
+                right: 15%;
+                width: 70%;
+                height: 10%;
+                background-color: #ffffff;
+
+                &:nth-child(2) {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        .increase {
+            background-color: #ffffff;
+            transition: all .4s ease-out;
+
+            div {
+                background-color: #8ED273;
+                transition: all .4s ease-out;
+            }
+
+            &:hover {
+                background-color: #8ED273;
+
+                div {
+                    background-color: #ffffff;
+                }
+            }
+        }
+        
+        .decrease {
+            background-color: #ffffff;
+            transition: all .4s ease-out;
+
+            div {
+                background-color: #E26E6E;
+                transition: all .4s ease-out;
+            }
+
+            &:hover {
+                background-color: #E26E6E;
+
+                div {
+                    background-color: #ffffff;
+                }
+            }
+        }
+
+        .current {
+            padding-left: 1em;
+            padding-right: 1em;
+
+            color: #6A85A0;
+            font-size: 1.5em;
+        }
+    }
+}
