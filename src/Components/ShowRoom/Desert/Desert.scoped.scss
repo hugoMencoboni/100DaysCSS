@@ -120,10 +120,16 @@
         20% {
             opacity: 1;
         }
-        75% {
+        60% {
+            background-color: #7ddffc;
             opacity: 1;
         }
+        80% {
+            background-color: rgb(209, 150, 24);
+            opacity: .4;
+        }
         100% {     
+            background-color: #233e64;
             opacity: 0;
         }
     }
