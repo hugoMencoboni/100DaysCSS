@@ -27,11 +27,11 @@ const showRoom = props => {
             <Send></Send>
             <Triangles></Triangles>
             <Intersect></Intersect>
+            <Counter></Counter>
             <Candle></Candle>
             <Paving></Paving>
             <Desert></Desert>
             <TodoList></TodoList>
-            <Counter></Counter>
         </div>
     );
 }
