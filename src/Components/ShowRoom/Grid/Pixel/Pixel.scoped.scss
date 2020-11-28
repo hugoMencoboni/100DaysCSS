@@ -1,0 +1,12 @@
+.checked {
+    background-color: #ffffff;
+}
+
+.un-checked {
+    background-color: #de4738;
+    border: 1px solid #E24E3F;
+
+    &:hover {
+        background-color: #db6b5e;
+    }
+}

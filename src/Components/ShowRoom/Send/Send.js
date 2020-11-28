@@ -5,7 +5,7 @@ const Send = props => {
   return (
     <div className="challenge">
         <input type="checkbox" name="cb" id="cb"/>
-        <label className="container" for="cb">      
+        <label className="container" htmlFor="cb">      
           <div className="send">Send</div>
           <div className="done">Done</div>
         </label>

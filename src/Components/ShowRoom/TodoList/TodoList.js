@@ -9,7 +9,7 @@ const todos = [
 ];
 
 const TotoList = props => {
-    const todoItems = todos.map(label => (<TodoItem label={label}></TodoItem>));
+    const todoItems = todos.map((label, index) => (<TodoItem key={index} label={label}></TodoItem>));
 
     return (
         <div className="challenge">

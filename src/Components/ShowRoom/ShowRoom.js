@@ -16,6 +16,7 @@ import TodoList from './TodoList/TodoList';
 import Counter from './Counter/Counter';
 import Sky from './Sky/Sky';
 import MovingSquare from './MovingSquare/MovingSquare';
+import Grid from './Grid/Grid';
 
 const showRoom = props => {
     return (
@@ -36,6 +37,7 @@ const showRoom = props => {
             <TodoList></TodoList>
             <Sky></Sky>
             <HoverMe></HoverMe>
+            <Grid></Grid>
         </div>
     );
 }
