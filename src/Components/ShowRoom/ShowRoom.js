@@ -14,6 +14,7 @@ import Paving from './Paving/Paving';
 import Desert from './Desert/Desert';
 import TodoList from './TodoList/TodoList';
 import Counter from './Counter/Counter';
+import Sky from './Sky/Sky';
 
 const showRoom = props => {
     return (
@@ -32,6 +33,7 @@ const showRoom = props => {
             <Paving></Paving>
             <Desert></Desert>
             <TodoList></TodoList>
+            <Sky></Sky>
         </div>
     );
 }

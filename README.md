@@ -52,6 +52,11 @@ Some figures (like this circle intersection) are easier to create with a contain
 
 Some shapes are easier to create with [`clip-path` property](https://css-tricks.com/almanac/properties/c/clip-path/).
 
+## Day 11 use Sass rules and Emmet
+<img src="./gifs/sky.gif" width="250" height="250"/>
+
+Use Sass rules like [`@for`](https://sass-lang.com/documentation/at-rules/control/for), [`random`](https://sass-lang.com/documentation/modules/math#random) and others rules for factorisation and maintainability. Couple with [`Emmet`](https://code.visualstudio.com/docs/editor/emmet), generate shapes with a lot of DOM elements are quicker to write.
+
 ## Others
 
 Start your projects with the good defaults => [https://hankchizljaw.com/wrote/a-modern-css-reset/](https://hankchizljaw.com/wrote/a-modern-css-reset/)
