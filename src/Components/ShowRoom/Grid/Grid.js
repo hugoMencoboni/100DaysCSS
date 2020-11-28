@@ -7,7 +7,7 @@ const gridLenght = 20*20;
 
 class Grid extends Component {
     state = {
-      gridState: Array(gridLenght).fill(0)
+      gridState: Array(gridLenght).fill(0).map(() => +!Math.floor(Math.random() * 11) % 11)
     }
         
     pixelClicked = (state, index) => {
