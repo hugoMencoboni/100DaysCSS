@@ -1,0 +1,41 @@
+.challenge {
+    position: relative;
+
+    background-color: #222222;
+
+    .square {
+        position: absolute;
+        border: 1px solid;
+        background-color: transparent;
+    }
+    
+    $animation-time: 2;
+    @for $i from 1 through 20 {
+        .square-#{$i} {
+            width: percentage((63 - 3*$i)/100);
+            height: percentage((63 - 3*$i)/100);
+            top: percentage((50 - (63 - 3*$i)/2)/100);
+            left: percentage((50 - (63 - 3*$i)/2)/100);
+            border-color: rgb((78 + 8*$i), (78 + 8*$i), (78 + 8*$i));
+            animation: rotate $animation-time + s ease-in-out;
+            animation-delay: 30*($i - 1) + ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    }
+    
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {      
+            transform: rotate(360deg);
+        }
+    }
+
+    &:hover {
+        .square{
+            animation-play-state: paused;
+        }
+    }
+}
