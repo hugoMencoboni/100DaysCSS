@@ -1,0 +1,27 @@
+$animation-time: 4s;
+
+.challenge {
+    position: relative;
+    
+    .grad {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        &.grad-1 {
+            background-image: linear-gradient(to bottom right, #4AD7B8, #f39c12);
+        }
+
+        &.grad-2 {
+            background-image: linear-gradient(to bottom right, #77C8C0, #267AAC);
+            animation: gradient-evolution $animation-time linear infinite;
+            opacity: 0;
+            
+            @keyframes gradient-evolution {
+                0%{opacity: 0;}
+                50%{opacity: 1;}
+                100%{opacity: 0;}
+            }
+        }
+    }
+}

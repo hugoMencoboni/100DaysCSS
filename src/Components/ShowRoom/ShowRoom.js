@@ -18,6 +18,7 @@ import Sky from './Sky/Sky';
 import MovingSquare from './MovingSquare/MovingSquare';
 import Grid from './Grid/Grid';
 import Timer from './Timer/Timer';
+import Gradient from './Gradient/Gradient';
 
 const showRoom = props => {
     return (
@@ -40,6 +41,7 @@ const showRoom = props => {
             <HoverMe></HoverMe>
             <Grid></Grid>
             <Timer></Timer>
+            <Gradient></Gradient>
         </div>
     );
 }
