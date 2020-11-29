@@ -17,6 +17,7 @@ import Counter from './Counter/Counter';
 import Sky from './Sky/Sky';
 import MovingSquare from './MovingSquare/MovingSquare';
 import Grid from './Grid/Grid';
+import Timer from './Timer/Timer';
 
 const showRoom = props => {
     return (
@@ -38,6 +39,7 @@ const showRoom = props => {
             <Sky></Sky>
             <HoverMe></HoverMe>
             <Grid></Grid>
+            <Timer></Timer>
         </div>
     );
 }
