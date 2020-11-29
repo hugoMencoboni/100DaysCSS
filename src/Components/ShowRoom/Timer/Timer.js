@@ -34,7 +34,13 @@ class Timer extends Component {
           <div className="displayer">
             {chars}
           </div>
-          <button className="pause" onClick={this.pause.bind(this)}></button>
+          <div className="pause">
+            <div className="visual">              
+              <div></div>
+              <div></div>
+            </div>
+            <button className="pause" onClick={this.pause.bind(this)}></button>
+          </div>
         </div>
       );
     }
