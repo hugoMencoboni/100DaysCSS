@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import  './Timer.scoped.scss';
 
-
 class Timer extends Component {
     state = {
       time: 0,

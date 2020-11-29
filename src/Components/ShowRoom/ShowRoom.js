@@ -19,6 +19,7 @@ import MovingSquare from './MovingSquare/MovingSquare';
 import Grid from './Grid/Grid';
 import Timer from './Timer/Timer';
 import Gradient from './Gradient/Gradient';
+import Slider from './Slider/Slider';
 
 const showRoom = props => {
     return (
@@ -42,6 +43,7 @@ const showRoom = props => {
             <Grid></Grid>
             <Timer></Timer>
             <Gradient></Gradient>
+            <Slider></Slider>
         </div>
     );
 }
