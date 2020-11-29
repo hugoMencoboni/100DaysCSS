@@ -14,7 +14,9 @@ class Slider extends Component {
     render() {
       return (
         <div className="challenge">
+          <div className="slider-box">
             <input className="slider" type="range" min={this.props.min || 0} max={this.props.max || 100} value={this.state.range} onChange={this.rangeChange} />
+          </div>
         </div>
       );
     }
