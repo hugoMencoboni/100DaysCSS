@@ -29,17 +29,28 @@ class Timer extends Component {
         chars.unshift((<div className='char' key={i}>{ timeReverse[i] || 0 }</div>));
       }
 
+      let actions;
+      if(this.state.pause) {
+        actions = (
+          <div className="visual">
+            <div className="un-pause"></div>
+          </div>);
+      } else {
+        actions = (
+          <div className="visual">
+            <div className="pause"></div>
+            <div className="pause"></div>
+          </div>);
+      }
+
       return (
         <div className="challenge">
           <div className="displayer">
             {chars}
           </div>
-          <div className="pause">
-            <div className="visual">              
-              <div></div>
-              <div></div>
-            </div>
-            <button className="pause" onClick={this.pause.bind(this)}></button>
+          <div className="actions">
+            {actions}
+            <button onClick={this.pause.bind(this)}></button>
           </div>
         </div>
       );
