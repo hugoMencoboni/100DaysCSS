@@ -23,18 +23,21 @@
             top: 0;
             width: 100%;
             height: 80%;
-            display: flex;
+            display: flex;  
 
             div {
-                width: 50%;
+                position: absolute;
                 height: 100%;
+                animation: leafs-grow .7s ease-in-out forwards .7s;  
 
                 &:nth-child(1) {
+                    right: 50%;
                     background-color: #ba381d;
                     clip-path: polygon(100% 100%, 100% 0, 0 100%);
                 }
         
                 &:nth-child(2) {
+                    left: 50%;
                     background-color: #e84624;
                     clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
                 }
@@ -144,4 +147,19 @@
     100% {
         transform: scale(1);
     }
-}          
+} 
+
+@keyframes leafs-grow {
+    0% {
+        width: 0%;
+    }
+    60% {
+        width: 55%;
+    }
+    80% {
+        width: 45%;
+    }
+    100% {
+        width: 50%;
+    }
+}           
