@@ -1,0 +1,131 @@
+.challenge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0f0e5;
+
+    .base {
+        width: 25%;
+        height: 1.5%;
+        background-color: #b9d6c2;
+        border-radius: 10px;
+        
+    }
+ 
+    .tree {
+        height: 80%;
+        width: 35%;
+        position: relative;
+
+        .leafs {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 80%;
+            display: flex;
+
+            div {
+                width: 50%;
+                height: 100%;
+
+                &:nth-child(1) {
+                    background-color: #ba381d;
+                    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+                }
+        
+                &:nth-child(2) {
+                    background-color: #e84624;
+                    clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+                }
+            }
+        }
+
+        .structure {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 80%;
+            right: 50%;
+            transform: translate(50%);
+            
+            .trunk {
+                position: absolute;
+                width: 4%;
+                height: 100%;
+                right: 50%;
+                transform: translate(50%);                
+                border-radius: 10px 10px 0 0;
+                background-color: #e8c87e;
+            }
+
+            .branch-container {
+                position: absolute;
+                width: 50%;
+
+                .branch {
+                    position: absolute;
+                    width: 8%;
+                    height: 80%;
+                    right: 0;
+                    border-radius: 10px;
+                    background-color: #e8c87e;
+                }
+
+                &.right {
+                    right: 0;
+
+                    .branch {
+                        right: initial;
+                        left: 0;
+                    }
+                }
+
+                &:nth-child(2) {
+                    height: 10%;
+                    top: 2%;
+
+                    .branch {
+                        transform: translate(-75%) rotate(-45deg);
+                    }
+                }
+
+                &:nth-child(3) {
+                    height: 15%;
+                    top: 12%;
+                    
+                    .branch {
+                        transform: translate(150%) rotate(45deg);
+                    }
+                }
+
+                &:nth-child(4) {
+                    height: 20%;
+                    top: 22%;
+                    
+                    .branch {
+                        transform: translate(-200%) rotate(-45deg);
+                    }
+                }
+
+                &:nth-child(5) {
+                    height: 25%;
+                    top: 35%;
+                    
+                    .branch {
+                        transform: translate(250%) rotate(45deg);
+                    }
+                }
+
+                &:nth-child(6) {
+                    height: 30%;
+                    top: 45%;
+                    
+                    .branch {
+                        transform: translate(-350%) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}
