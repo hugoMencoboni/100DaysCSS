@@ -21,6 +21,7 @@ import Timer from './Timer/Timer';
 import Gradient from './Gradient/Gradient';
 import Slider from './Slider/Slider';
 import Tree from './Tree/Tree';
+import FolderTree from './FolderTree/FolderTree';
 
 const showRoom = props => {
     return (
@@ -46,6 +47,7 @@ const showRoom = props => {
             <Gradient></Gradient>
             <Slider></Slider>
             <Tree></Tree>
+            <FolderTree></FolderTree>
         </div>
     );
 }
