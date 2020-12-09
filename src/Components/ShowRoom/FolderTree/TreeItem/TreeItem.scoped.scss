@@ -1,4 +1,24 @@
-.folder,
 .item {
+    display: flex;
+    gap: .3em;
+    align-content: center;
     cursor: pointer;
+
+    .icon {
+        width: 1.1em;
+
+        svg.file-icon path {
+            fill: #000000;
+        }
+
+        svg.folder-icon path {
+            fill: #00bcd4;
+        }
+    }
+}
+
+.children {
+    margin-left: .55em;
+    border-left: 1px solid #00bcd4;
+    padding-left: 1em;
 }
