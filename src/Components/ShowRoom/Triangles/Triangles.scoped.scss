@@ -8,31 +8,31 @@
         width: 0px;
         height: 0px;
         position: absolute;
-        border: 3.5em solid transparent;
-        border-left-width: 2em;
-        border-right-width: 2em;
+        border: 5em solid transparent;
+        border-left-width: 2.87em;
+        border-right-width: 2.87em;
         
         &:nth-child(1) {            
-            top: calc(50% - 3.5em*1/2);
-            right: 45%;
+            top: calc(50% - 5em*1/2);
+            right: 47.5%;
             border-top-color:#FD4602;
         }
 
         &:nth-child(2) {           
-            top: calc(50% - 3.5em*1/2);
-            right: 50%;
+            top: calc(50% - 5em*1/2);
+            right: 52.5%;
             border-top-color:#FF6D00;
         }
 
         &:nth-child(3) {            
-            top: calc(50% - 3.5em*3/2);
-            left: 50%;
+            top: calc(50% - 5em*3/2);
+            left: 47.5%;
             border-bottom-color:#FF6D00;
         }
 
         &:nth-child(4) {            
-            top: calc(50% - 3.5em*3/2);
-            left: 45%;
+            top: calc(50% - 5em*3/2);
+            left: 52.5%;
             border-bottom-color:#FD4602;
         }
     }
