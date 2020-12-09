@@ -8,12 +8,12 @@
         width: 1.2em;
 
         svg.file-icon path {
-            fill: #000000;
+            fill: #fff;
             stroke-width: .5em;
         }
 
         svg.folder-icon path {
-            fill: #00bcd4;
+            fill: #e84624;
         }
     }
 }
@@ -29,7 +29,7 @@
         left: 0;
         width: .1em;
         height: 100%;
-        background-color: #00bcd4;
+        background-color: #e84624;
     }
 
     .child {
@@ -39,7 +39,7 @@
             margin-top: .5em;
             width: 1em;
             height: .1em;
-            background-color: #00bcd4;
+            background-color: #e84624;
         }
     }
 }
