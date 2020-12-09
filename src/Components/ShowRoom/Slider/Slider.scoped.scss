@@ -4,6 +4,12 @@
     align-items: center;
     background-color: #506172;
 
+    input[type=range] {
+        -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+        width: 100%; /* Specific width is required for Firefox. */
+        background: transparent; /* Otherwise white in Chrome */
+    }
+
     .slider-box {
         display: grid;
         justify-items: center;
@@ -22,11 +28,13 @@
 
         .slider::-webkit-slider-thumb {
             -webkit-appearance: none;
+            width: 2rem;
+            height: 2rem;
             appearance: none;
             background: #4CAF50;
             border: 1px solid #4CAF50;
             border-radius: 100%;
-            background: #fff url('../../../Assets/Images/slider-thumb.png') center center no-repeat;;
+            background: #fff url('../../../Assets/Images/slider-thumb.png') center center no-repeat;
             background-size: 50% 50%;
             opacity: 1;
             cursor: pointer;
@@ -37,7 +45,7 @@
             border: 1px solid #4CAF50;
             width: 1.6em;
             height: 1.6em;
-            background: #fff url('../../../Assets/Images/slider-thumb.png') center center no-repeat;;
+            background: #fff url('../../../Assets/Images/slider-thumb.png') center center no-repeat;
             background-size: 50% 50%;
             opacity: 1;
             cursor: pointer;
