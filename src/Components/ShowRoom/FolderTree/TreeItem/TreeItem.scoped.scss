@@ -8,12 +8,13 @@
         width: 1.2em;
 
         svg.file-icon path {
-            fill: #fff;
-            stroke-width: .5em;
+            stroke: #fff;
+            stroke-width: .2em;
         }
 
         svg.folder-icon path {
-            fill: #e84624;
+            stroke: #e84624;
+            stroke-width: .2em;
         }
     }
 }
