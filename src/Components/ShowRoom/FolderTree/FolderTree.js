@@ -84,7 +84,9 @@ class FolderTree extends Component {
     render() {
       return (
         <div className="challenge">
-          <TreeItem className="tree" data={this.state.tree} onFolderClick={this.toggleFolder}></TreeItem>
+          <div className="tree">
+            <TreeItem data={this.state.tree} onFolderClick={this.toggleFolder}></TreeItem>
+          </div>
         </div>
       );
     }
