@@ -19,6 +19,26 @@
 
 .children {
     margin-left: .55em;
-    border-left: 1px solid #00bcd4;
-    padding-left: 1em;
+    position: relative;
+    overflow: hidden;
+
+    .v-line {
+        position: absolute;
+        top: -1em;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background-color: #00bcd4;
+    }
+
+    .child {
+        display: flex;
+        
+        .h-line {
+            margin-top: .5em;
+            width: 1em;
+            height: 1px;
+            background-color: #00bcd4;
+        }
+    }
 }

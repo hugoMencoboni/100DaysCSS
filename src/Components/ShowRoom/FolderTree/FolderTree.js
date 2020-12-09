@@ -27,9 +27,9 @@ const initData = {
     },
     {
       id: uuidv4(),
-      name: "music",
+      name: "musics",
       folder: true,
-      open: false,
+      open: true,
       children: [
         {
           id: uuidv4(),
@@ -38,6 +38,10 @@ const initData = {
         {
           id: uuidv4(),
           name: "music_2.mp3",
+        },
+        {
+          id: uuidv4(),
+          name: "music_3.mp3",
         }
       ],
     },
@@ -80,7 +84,7 @@ class FolderTree extends Component {
     render() {
       return (
         <div className="challenge">
-          <TreeItem data={this.state.tree} onFolderClick={this.toggleFolder}></TreeItem>
+          <TreeItem className="tree" data={this.state.tree} onFolderClick={this.toggleFolder}></TreeItem>
         </div>
       );
     }

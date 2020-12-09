@@ -3,7 +3,10 @@ import  './TreeItem.scoped.scss';
 
 const TreeItem = props => {
   const children = props.data.children?.map(c => {
-    return (<TreeItem key={c.id} data={c} value={c.id} onFolderClick={props.onFolderClick}></TreeItem>)
+    return (
+      <div className="child" key={c.id}>
+        <div className="h-line"></div><TreeItem data={c} value={c.id} onFolderClick={props.onFolderClick}></TreeItem>
+      </div>)
   });
 
   const icon = props.data.folder ?
@@ -19,7 +22,7 @@ const TreeItem = props => {
           <div className="icon">{icon}</div>
           <div value={props.data.id} onClick={props.onFolderClick.bind(null, props.data.id)}>{props.data.name}</div>
         </div>
-        <div className="children">{props.data.open ? children : []}</div>
+        <div className="children">{props.data.open ? [...children, <div className="v-line" key="v-line"></div>] : []}</div>
       </div>
   );
 }

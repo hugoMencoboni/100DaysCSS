@@ -69,30 +69,30 @@ select {
   }
 }
 
-* {
-  font-size: 90%;
+html {
+  font-size: 60%;
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-  * {
-    font-size: 80%;
+  html {
+    font-size: 50%;
   }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
-  * {
-    font-size: 70%;
+  html {
+    font-size: 40%;
   }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 700px) {
-  * {
-    font-size: 60%;
+  html {
+    font-size: 30%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  * {
-    font-size: 50%;
+  html {
+    font-size: 20%;
   }
 }
