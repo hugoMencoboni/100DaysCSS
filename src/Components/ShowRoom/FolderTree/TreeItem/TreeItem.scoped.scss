@@ -5,10 +5,11 @@
     cursor: pointer;
 
     .icon {
-        width: 1.1em;
+        width: 1.2em;
 
         svg.file-icon path {
             fill: #000000;
+            stroke-width: .5em;
         }
 
         svg.folder-icon path {
@@ -26,7 +27,7 @@
         position: absolute;
         top: -1em;
         left: 0;
-        width: 1px;
+        width: .1em;
         height: 100%;
         background-color: #00bcd4;
     }
@@ -37,7 +38,7 @@
         .h-line {
             margin-top: .5em;
             width: 1em;
-            height: 1px;
+            height: .1em;
             background-color: #00bcd4;
         }
     }
